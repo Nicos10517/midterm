@@ -15,7 +15,18 @@ class Array:
             1. Must use a numpy array as the internal data structure.
             2. Must adhere to the docstring requirements per method, including raising
                raising appropriate exceptions where indicated.
+
     """
+    def  to_linked_list(self) -> LinkedList:
+        from datastructures import Array
+        print(self)
+        my_linked_list = self.to_linked_list()
+        print(my_linked_list)
+        return my_linked_list
+    
+    def sort(self) -> None:
+        self.sort()
+        print()
 
     def __init__(self, size: int = 0, default_item_value: Any = None) -> None:
         """ Array Constructor. Initializes the Array with a default capacity and default value.
